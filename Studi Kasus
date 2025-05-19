@@ -1,0 +1,146 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPR7StkpsT6xdahYPTA5p8E",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dikaaaa21/DasarAlgoritmaDanPemrodraman-BisDig/blob/main/Studi%20Kasus\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MJ6MeJEPCHG5",
+        "outputId": "ba53d35e-3a3f-4b48-d6d0-ee1b9cdb565c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka untuk dihitung faktorialnya: 21\n",
+            "21! = 51090942171709440000\n"
+          ]
+        }
+      ],
+      "source": [
+        "def faktorial(n):\n",
+        "    if n == 0 or n == 1:  # Base case\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return n * faktorial(n - 1)  # Recursive case\n",
+        "\n",
+        "# Input dari pengguna\n",
+        "angka = int(input(\"Masukkan angka untuk dihitung faktorialnya: \"))\n",
+        "hasil = faktorial(angka)\n",
+        "print(f\"{angka}! = {hasil}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat list kosong untuk menyimpan nilai siswa\n",
+        "nilai_siswa = []\n",
+        "\n",
+        "# Menggunakan perulangan untuk input nilai 5 siswa\n",
+        "for i in range(5):\n",
+        "    nilai = float(input(f\"Masukkan nilai siswa ke-{i+1}: \"))\n",
+        "    nilai_siswa.append(nilai)\n",
+        "\n",
+        "# Mencari nilai tertinggi dan indeks siswa yang mendapatkannya\n",
+        "nilai_tertinggi = max(nilai_siswa)\n",
+        "index_tertinggi = nilai_siswa.index(nilai_tertinggi) + 1  # +1 agar sesuai nomor siswa\n",
+        "\n",
+        "# Menampilkan hasil\n",
+        "print(f\"Nilai tertinggi adalah {nilai_tertinggi}, diperoleh oleh siswa ke-{index_tertinggi}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ftKPHsSCCYoA",
+        "outputId": "3b6f0bd7-720d-4c38-935e-3a55030c4f48"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan nilai siswa ke-1: 87\n",
+            "Masukkan nilai siswa ke-2: 93\n",
+            "Masukkan nilai siswa ke-3: 89\n",
+            "Masukkan nilai siswa ke-4: 83\n",
+            "Masukkan nilai siswa ke-5: 91\n",
+            "Nilai tertinggi adalah 93.0, diperoleh oleh siswa ke-2.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hitung_total_bayar(total_belanja):\n",
+        "    if total_belanja > 500000:\n",
+        "        diskon = 0.10 * total_belanja\n",
+        "        total_bayar = total_belanja - diskon\n",
+        "        print(f\"Selamat! Anda mendapatkan diskon 10% sebesar Rp{diskon:,.0f}.\")\n",
+        "    else:\n",
+        "        total_bayar = total_belanja\n",
+        "        print(\"Maaf, Anda tidak mendapatkan diskon.\")\n",
+        "    return total_bayar\n",
+        "\n",
+        "# Input dari pengguna\n",
+        "total_belanja = float(input(\"Masukkan total belanja Anda (Rp): \"))\n",
+        "\n",
+        "# Hitung total bayar\n",
+        "total_bayar = hitung_total_bayar(total_belanja)\n",
+        "\n",
+        "# Tampilkan hasil\n",
+        "print(f\"Total yang harus dibayar: Rp{total_bayar:,.0f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MM0zvdvtCyRE",
+        "outputId": "97213b1c-fee3-496c-9d25-457601b4da51"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan total belanja Anda (Rp): 1000000\n",
+            "Selamat! Anda mendapatkan diskon 10% sebesar Rp100,000.\n",
+            "Total yang harus dibayar: Rp900,000\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

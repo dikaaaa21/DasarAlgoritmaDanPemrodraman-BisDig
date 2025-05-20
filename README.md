@@ -145,3 +145,98 @@ Total yang harus dibayar: Rp900,000
 ## Kesimpulan
 
 Struktur percabangan `if-else` sangat berguna untuk membuat keputusan dalam program berdasarkan kondisi tertentu. Dalam kasus ini, percabangan memudahkan program menentukan apakah pelanggan berhak mendapatkan diskon atau tidak sesuai dengan aturan bisnis yang berlaku.
+
+STUDI KASUS KE EMPAT
+
+# Program Hitung Rata-rata dan Status Kelulusan
+
+## Deskripsi Program
+Program ini digunakan untuk menghitung rata-rata nilai dari tiga mata pelajaran dan menentukan apakah siswa tersebut lulus atau tidak berdasarkan rata-rata nilai tersebut. Siswa dinyatakan lulus jika rata-rata nilai minimal 75.
+
+## Penjelasan Peran Tipe Data dan Operator
+
+### Tipe Data
+**Integer (`int`)**  
+  Digunakan untuk menyimpan nilai input dari setiap mata pelajaran. Nilai ujian biasanya berupa angka bulat, sehingga tipe data integer cocok untuk menyimpan data ini.
+
+**Float (`float`)**  
+  Hasil perhitungan rata-rata menggunakan pembagian dapat menghasilkan angka desimal. Oleh karena itu, variabel `rata_rata` bertipe float untuk menyimpan nilai rata-rata yang mungkin memiliki angka di belakang koma.
+
+**String (`str`)**  
+  Digunakan untuk menyimpan dan menampilkan status kelulusan, yaitu "Lulus" atau "Tidak Lulus".
+
+### Operator
+**Operator Aritmatika (`+`, `/`)**  
+  Operator `+` digunakan untuk menjumlahkan nilai ketiga mata pelajaran. Operator `/` digunakan untuk membagi jumlah nilai dengan 3 untuk mendapatkan rata-rata.
+
+**Operator Perbandingan (`>=`)**  
+  Operator ini digunakan untuk membandingkan apakah rata-rata nilai lebih besar atau sama dengan 75. Jika benar, siswa dinyatakan lulus.
+
+**Operator Penugasan (`=`)**  
+  Digunakan untuk menyimpan nilai hasil input, hasil perhitungan rata-rata, dan status kelulusan ke dalam variabel.
+
+## Cara Kerja Program
+1. Program meminta input nilai tiga mata pelajaran dari pengguna.
+2. Nilai-nilai tersebut dijumlahkan dan dibagi 3 untuk mendapatkan rata-rata.
+3. Program mengecek apakah rata-rata tersebut memenuhi syarat kelulusan (≥ 75).
+4. Program menampilkan nilai rata-rata dan status kelulusan.
+
+## Contoh Output Program
+Masukkan nilai mata pelajaran 1: 98
+Masukkan nilai mata pelajaran 2: 87
+Masukkan nilai mata pelajaran 3: 95
+Rata-rata nilai: 93.33
+Status kelulusan: Lulus
+
+## Cara Menjalankan Program
+1. Pastikan Python sudah terpasang di komputer Anda.
+2. Simpan file program dengan nama `kelulusan.py`.
+3. Jalankan program dengan perintah:
+4. Masukkan nilai saat diminta, lalu lihat hasilnya.
+
+STUDI KASUS KELIMA
+
+# Program Hitung Total Harga Pembelian 3 Barang
+
+## Deskripsi Program
+Program ini digunakan untuk menghitung total harga pembelian dari 3 barang yang dibeli di toko. Program akan meminta pengguna memasukkan harga masing-masing barang, kemudian menjumlahkan harga tersebut dan menampilkan total pembayaran.
+
+## Langkah-langkah Algoritma
+
+1. **Mulai** program.
+2. **Input** harga barang pertama dari pengguna.
+3. **Input** harga barang kedua dari pengguna.
+4. **Input** harga barang ketiga dari pengguna.
+5. **Hitung** total harga dengan menjumlahkan ketiga harga barang.
+6. **Tampilkan** total harga pembelian kepada pengguna.
+7. **Selesai** program.
+
+## Penjelasan Program
+
+### Tipe Data
+**Float (`float`)**  
+  Digunakan untuk menyimpan harga barang karena harga bisa berupa angka desimal (misalnya 59999.99).
+
+### Operator
+**Operator Penjumlahan (`+`)**  
+  Digunakan untuk menjumlahkan harga ketiga barang.
+**Operator Penugasan (`=`)**  
+  Digunakan untuk menyimpan nilai input dan hasil penjumlahan ke dalam variabel.
+
+## Cara Kerja Program
+1. Program meminta pengguna memasukkan harga tiga barang secara berurutan.
+2. Harga-harga tersebut dijumlahkan untuk mendapatkan total pembayaran.
+3. Program menampilkan total harga pembelian dengan format mata uang Rupiah.
+
+## Contoh Output Program
+
+Masukkan harga barang 1: 60000
+Masukkan harga barang 2: 95999
+Masukkan harga barang 3: 79999
+Total harga pembelian: Rp235998.00
+
+## Cara Menjalankan Program
+1. Pastikan Python sudah terpasang di komputer Anda.
+2. Simpan file program dengan nama `total_harga.py`.
+3. Jalankan program dengan perintah:
+4. Masukkan harga barang saat diminta, kemudian lihat hasil totalnya.
